@@ -1,0 +1,276 @@
+.App {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+.App-container {
+  background-color: white;
+  width: 70%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  padding-top: 20px;;
+}
+
+.mainDataContainer {
+  width: 100%;
+}
+
+.headerParts {
+  width: calc(100% - 20px);
+  height: 40px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.headerDataParts {
+  width: calc(100% - 350px);
+  font-weight: bolder;
+  font-size: 17px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  float: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.headerDataParts div {
+  width: 30%;
+}
+
+.toolsParts {
+  float: right;
+}
+
+.toolsParts button {
+  border: 1px solid orange;
+  background-color: orange;
+  border-radius: 5px;
+  color: white;
+  font-size: 17px;
+  line-height: 30px;
+  margin-right: 5px;
+  padding: 10px 10px 2px 10px;
+}
+
+.itemPartContainer {
+  width: 100%;
+  height: 60px;
+  padding: 5px 10px;
+}
+
+.itemPartSelBg {
+  padding: 5px 10px;
+  background: rgb(255, 149, 0, 0.2);
+  border-radius: 6px;
+}
+
+.itemPartNotSelBg {
+  padding: 5px 10px;
+}
+
+.itemName {
+  width: calc(100% - 350px);
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  float: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+}
+
+.rightDivider {
+  border-right: 1px solid #CCCCCC;
+}
+
+.itemName div {
+  width: 30%;
+}
+
+.itemPart {
+  float: left;
+  margin-left: 20px;
+  width: 150px;
+  padding: 5px 0px;
+  /* border: 1px solid red; */
+}
+
+.itemPart button {
+  border: 1px solid #cccccc;
+  background-color: white;
+  border-radius: 5px;
+  color: white;
+  font-size: 17px;
+  /* line-height: 20px; */
+  margin-right: 5px;
+  float: right;
+  padding: 10px 10px 5px 10px;
+}
+
+.input-number {
+  width: 40px;
+  padding: 0 12px;
+  vertical-align: top;
+  text-align: center;
+  background-color: transparent;
+  border: 0px;
+  color: #212121 !important;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.input-number:focus {
+  border: 0px !important;
+}
+
+.input-number,
+.input-number-decrement,
+.input-number-increment {
+  border: 0px;
+  height: 40px;
+  user-select: none;
+}
+
+.input-number-decrement,
+.input-number-increment {
+  display: inline-block;
+  width: 30px;
+  line-height: 38px;
+  color: orange;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.ModalDelete {
+  text-align: center;
+  width: 400px;
+  background-color: white;
+  margin: auto;
+  position: relative;
+  top: calc(50% - 200px);
+  outline: none !important;
+  outline-width: 0 !important;
+  padding: 40px;
+}
+
+.Modal {
+  width: 400px;
+  background-color: white;
+  margin: auto;
+  position: relative;
+  top: calc(50% - 200px);
+  outline: none !important;
+  outline-width: 0 !important;
+  padding: 40px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.itemForm {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.itemForm label {
+  padding-left:26px;
+  width:100px;
+  display:inline-block
+}
+
+.itemForm input {
+  width: 40%;
+  padding: 5px 20px;
+  font-size: 17px;
+}
+
+.closeModal {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  padding: 10px 10px 5px 10px;
+  font-size: 20px;
+  border-radius: 100%;
+  border: 1px solid orange;
+  background-color: orange;
+  font-weight: bold;
+}
+
+.Overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.itemForm-Submit {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 17px;
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+}
+
+.saveBtn {
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 1px solid orange;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.onlyCellphone {display: none;}
+.notCellphone {display: block;}
+
+@media only screen and (max-width: 600px) {
+  .App-container {
+    width: 90%;
+  }
+
+  .itemPartContainer {
+    height: 180px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CCCCCC;
+  }
+
+  .itemName {
+    flex-direction: column;
+  }
+
+  .itemName div {
+    width: 100%;
+    height: 40px; 
+  }
+
+  .ModalDelete {
+    width: calc(90% - 80px);
+  }
+  
+  .Modal {
+    width: calc(90% - 80px);
+  }
+
+  .onlyCellphone {display: block;}
+  .notCellphone {display: none;}
+}
