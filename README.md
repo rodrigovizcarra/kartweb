@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# KartWeb
 
 ## General:
 Este desarrollo se realizó para ser presentado como prueba tecnica en RokketLab.
