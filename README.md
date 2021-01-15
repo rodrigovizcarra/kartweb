@@ -6,6 +6,10 @@ El que consta de dos partes un BackEnd (kart-api) y FrontEnd este proyecto (kart
 
 ## Script disponible
 
+Instalar dependencias
+
+### `npm install`
+
 En el directorio del proyecto para levantar la web:
 
 ### `npm start`
